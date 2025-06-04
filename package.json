@@ -1,0 +1,62 @@
+{
+	"name": "backend",
+	"version": "1.0.0",
+	"main": "index.js",
+	"type": "commonjs",
+	"scripts": {
+		"start": "node dist/server.js",
+		"dev": "nodemon",
+		"build": "tsc",
+		"lint": "eslint . --ext .ts",
+		"test": "jest --coverage",
+		"typeorm": "node --require ts-node/register ./node_modules/typeorm/cli.js",
+		"lint:fix": "eslint . --ext .ts --fix",
+		"prettier": "prettier --write .",
+		"lint:check": "eslint . --ext .ts && prettier --check ."
+	},
+	"keywords": [
+		"backend",
+		"node",
+		"express",
+		"typescript",
+		"modules_architecture",
+		"oop",
+		"clean_code"
+	],
+	"author": "",
+	"license": "ISC",
+	"description": "",
+	"devDependencies": {
+		"@types/bcrypt": "^5.0.2",
+		"@types/cookie-parser": "^1.4.8",
+		"@types/cors": "^2.8.17",
+		"@types/express": "^5.0.1",
+		"@types/jsonwebtoken": "^9.0.9",
+		"@types/mongoose": "^5.11.96",
+		"@types/node": "^22.15.14",
+		"@types/winston": "^2.4.4",
+		"@typescript-eslint/eslint-plugin": "^8.32.0",
+		"@typescript-eslint/parser": "^8.32.0",
+		"eslint": "^9.26.0",
+		"eslint-config-prettier": "^10.1.2",
+		"eslint-plugin-prettier": "^5.4.0",
+		"nodemon": "^3.1.10",
+		"prettier": "^3.5.3",
+		"ts-node": "^10.9.2",
+		"tsconfig-paths": "^4.2.0",
+		"typescript": "^5.8.3"
+	},
+	"dependencies": {
+		"bcrypt": "^5.1.1",
+		"class-transformer": "^0.5.1",
+		"class-validator": "^0.14.2",
+		"cookie-parser": "^1.4.7",
+		"cors": "^2.8.5",
+		"dotenv": "^16.5.0",
+		"express": "^5.1.0",
+		"jsonwebtoken": "^9.0.2",
+		"mongoose": "^8.14.1",
+		"reflect-metadata": "^0.2.2",
+		"winston": "^3.17.0"
+	}
+}
