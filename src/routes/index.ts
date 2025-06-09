@@ -4,7 +4,6 @@ import { AuthController } from '~/modules/auth/auth.controller';
 
 const router = Router();
 
-// Khởi tạo các controller
 const userController = new UserController();
 const authController = new AuthController();
 
