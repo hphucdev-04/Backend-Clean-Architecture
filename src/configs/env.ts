@@ -3,10 +3,8 @@ import path from 'path';
 
 const envPath = path.resolve(__dirname, '../../.env');
 
-// Load các biến môi trường từ file .env
 dotenv.config({ path: envPath });
 
-// Các biến môi trường được sử dụng trong ứng dụng
 export const env = {
 	node: process.env.NODE_ENV || 'development',
 	isProduction: process.env.NODE_ENV === 'production',
@@ -34,7 +32,6 @@ export const env = {
 		sameSite: (process.env.COOKIE_SAME_SITE as 'strict' | 'lax' | 'none') || 
 			(process.env.NODE_ENV === 'production' ? 'strict' : 'lax'),
 		path: process.env.COOKIE_PATH || '/',
-		// Cookie names
 		accessTokenName: process.env.ACCESS_TOKEN_COOKIE_NAME || 'accessToken',
 		refreshTokenName: process.env.REFRESH_TOKEN_COOKIE_NAME || 'refreshToken',
 		sessionName: process.env.SESSION_COOKIE_NAME || 'sessionId',
